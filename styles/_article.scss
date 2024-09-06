@@ -1,0 +1,52 @@
+.articles{
+    background-color: $veryLightGray;
+    .article{
+        &-grid{
+            display: grid;
+            grid-template-columns:1fr ;
+            gap: 48px;
+            @include breakpoint-up(medium){
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include breakpoint-up(large){
+                grid-template-columns: repeat(4,1fr);
+            }
+        }
+        &-item{
+            background-color: $white;
+            box-shadow: 0 3px 12px rgba(0,0,0, 0.4)
+            
+            // border: 2px solid red ;
+            // background-color: red;
+        }
+        &-image{
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 14px 14px 0 0;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+        &-text{
+            padding: 20px 24px 40px 25px;
+        }
+        &-author{
+            font-size: 14px;
+            color: $grayishBlue;
+            margin-bottom: 10px;
+        }
+        &-title{
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: black;
+            line-height: 1.5;
+        }
+        &-decription{
+            font-size: 13px;
+            color: $grayishBlue;
+        }
+    }
+   
+}

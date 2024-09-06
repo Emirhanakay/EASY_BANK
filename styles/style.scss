@@ -1,0 +1,41 @@
+@import"mixin";
+@import"global";
+@import"header";
+@import"home";
+@import"feature";
+@import"article";
+@import"footer";
+
+
+
+
+// @mixin box($color){
+
+//     background-color: $color;
+//     color: white;
+//     padding: 10px;
+//     border-radius: 10px;
+
+// }
+// .section{
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+//     padding: 30px;
+//     .box1{
+//      @include box($color:blue);
+
+//     }
+//     .box2{
+//         @include box($color:red);
+
+//     }
+//     }
+//     .box3{
+//         @include box($color:orange);
+
+//     }
+    
+
+
+
